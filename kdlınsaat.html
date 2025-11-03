@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDL İnşaat | Güvenin ve Kalitenin Adı</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      background-attachment: fixed;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* --- NAV --- */
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #f7b500;
+      color: #222;
+    }
+
+    /* --- SECTIONS --- */
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #f7b500;
+    }
+
+    /* --- BUTTON --- */
+    .button {
+      display: inline-block;
+      background: #f7b500;
+      color: #222;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background: #e0a400;
+    }
+
+    /* --- FORM --- */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #f7b500;
+    }
+    button {
+      background: #f7b500;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e0a400;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2b2b2b;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav a {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/6069/6069072.png" alt="KDL Logo" width="90" height="90">
+    <h1>KDL İnşaat</h1>
+    <p>Güvenin ve Kalitenin Adı</p>
+  </header>
+
+  <nav>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#projeler">Projeler</a>
+    <a href="#vizyon">Vizyon</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>KDL İnşaat, genç bir marka olarak inşaat sektörüne yeni bir soluk getirmek amacıyla kurulmuştur.  
+       Henüz proje geçmişimiz bulunmamaktadır; ancak önümüzdeki dönemde konut, ticari yapı ve yaşam alanları üzerine projeler geliştirmeyi planlıyoruz.</p>
+    <p>Bizim için en önemli değerler: güven, kalite ve sürdürülebilirliktir.</p>
+    <p>Kurucumuz: <strong>Mehmet Efe </strong></p>
+  </section>
+
+  <section id="projeler">
+    <h2>Projelerimiz</h2>
+    <p>Şu anda tamamlanmış veya yapım aşamasında bir projemiz bulunmamaktadır.  
+       Ancak kısa vadede ilk projemizin temelini atmayı hedefliyoruz.</p>
+    <p>Yeni projelerimiz açıklandığında burada duyurulacaktır.</p>
+    <a href="#iletisim" class="button">Bizimle İletişime Geç</a>
+  </section>
+
+  <section id="vizyon">
+    <h2>Vizyonumuz</h2>
+    <p>Amacımız; Türkiye genelinde modern, dayanıklı ve çevreye duyarlı yapılar inşa ederek insanların yaşam kalitesini artırmaktır.  
+       KDL İnşaat olarak uzun vadede markamızı güven, kalite ve yenilikle özdeş hale getirmek istiyoruz.</p>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>📞 Telefon: +90 500 000 00 00</p>
+    <p>📧 E-posta: info@kdli̇nsaat.com</p>
+    <p>📍 Adres: İstanbul, Türkiye</p>
+
+    <form action="#" method="post">
+      <label>Adınız:</label>
+      <input type="text" name="ad" placeholder="Adınızı girin" required>
+
+      <label>E-posta:</label>
+      <input type="email" name="email" placeholder="E-postanızı girin" required>
+
+      <label>Mesajınız:</label>
+      <textarea name="mesaj" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+
+      <button type="submit">Mesaj Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 KDL İnşaat | Tüm Hakları Saklıdır</p>
+  </footer>
+
+</body>
+</html>
